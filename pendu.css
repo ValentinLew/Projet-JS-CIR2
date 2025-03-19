@@ -1,0 +1,77 @@
+#game-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+#word-display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+#keyboard button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#keyboard button:hover {
+    background-color: #45a049;
+}
+
+#lives {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+#hangman-drawing {
+    margin-top: 20px;
+    height: 200px;
+    background: url('hangman0.png') no-repeat center center;
+    background-size: contain;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.key {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.key:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
