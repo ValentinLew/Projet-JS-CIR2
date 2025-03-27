@@ -1,77 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
 #game-container {
     text-align: center;
-    font-family: 'Arial', sans-serif;
     margin-top: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }
 
 h1 {
     color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 #word-display {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin: 20px 0;
     letter-spacing: 5px;
+    font-weight: bold;
 }
 
-#keyboard button {
-    padding: 10px;
-    margin: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+#hangman-canvas {
+    border: 2px solid black;
+    background-color: white;
+    display: block;
+    margin: 20px auto;
     border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-#keyboard button:hover {
-    background-color: #45a049;
 }
 
 #lives {
     color: red;
     font-weight: bold;
-    margin-top: 20px;
+    font-size: 1.2em;
+    margin-top: 15px;
 }
 
 #message {
     font-size: 1.5em;
-    margin-top: 10px;
-    color: #333;
-}
-
-#hangman-drawing {
-    margin-top: 20px;
-    height: 200px;
-    background: url('hangman0.png') no-repeat center center;
-    background-size: contain;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #555;
 }
 
 #keyboard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
     margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .key {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    font-size: 18px;
     text-align: center;
-    line-height: 30px;
+    cursor: pointer;
     background-color: #4CAF50;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: background 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.key:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
+    .key:hover {
+        background-color: #45a049;
+    }
 
+    .key:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
